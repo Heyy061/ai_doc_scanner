@@ -59,8 +59,16 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-
       ///////////////////////////////////////////////
+      
+      body: Column(
+        children: [
+          Row(
+            children: [Container(color: Colors.amber, height: 100, width: 100)],
+          ),
+          
+        ],
+      ),
     );
   }
 }

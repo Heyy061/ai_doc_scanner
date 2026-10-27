@@ -1,4 +1,4 @@
-import 'package:ai_doc_scanner/BottomNavigation_pages/home_page.dart'
+import 'package:ai_doc_scanner/BottomNavigation_pages/homepage/home_page.dart'
     show HomePage;
 import 'package:flutter/material.dart';
 
