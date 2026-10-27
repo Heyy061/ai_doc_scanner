@@ -1,5 +1,6 @@
 import 'package:ai_doc_scanner/BottomNavigation_pages/homepage/home_page.dart'
     show HomePage;
+import 'package:ai_doc_scanner/BottomNavigation_pages/pageChange/page_change.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class DocScanner extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(),
-      home: HomePage(),
+      home: PageChange(),
     );
   }
 }

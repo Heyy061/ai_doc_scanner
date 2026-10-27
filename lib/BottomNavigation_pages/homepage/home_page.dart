@@ -1,4 +1,7 @@
+import 'package:ai_doc_scanner/BottomNavigation_pages/homepage/scan_Docs.dart';
 import 'package:flutter/material.dart';
+
+import 'homePage_Containers.dart' show HomepageContainers;
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -59,15 +62,54 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
+
       ///////////////////////////////////////////////
-      
-      body: Column(
-        children: [
-          Row(
-            children: [Container(color: Colors.amber, height: 100, width: 100)],
-          ),
-          
-        ],
+      body: Padding(
+        padding: const EdgeInsets.only(top: 20.0),
+        child: Column(
+          children: [
+            Row(
+              children: [
+                HomepageContainers(
+                  ic: Icons.camera_alt_rounded,
+                  name: "Scan Document",
+                  onClick: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const ScanDocs()),
+                    );
+                  },
+                ),
+                SizedBox(width: 5),
+                // HomepageContainers(
+                //   ic: Icons.text_decrease_rounded,
+                //   name: "Extract Text [ORC]",
+                // ),
+              ],
+            ),
+            // Row(
+            //   children: [
+            //     HomepageContainers(ic: Icons.picture_as_pdf, name: "View PDF"),
+            //     SizedBox(width: 5),
+            //     HomepageContainers(
+            //       ic: Icons.auto_awesome_rounded,
+            //       name: "AI Summarize",
+            //     ),
+            //   ],
+            // ),
+            SizedBox(height: 5),
+            Align(
+              alignment: AlignmentGeometry.topLeft,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  "Recent Documents",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
