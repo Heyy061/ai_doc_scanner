@@ -1,17 +1,42 @@
-# ai_doc_scanner
+# Smart Document Scanner:-
 
-A new Flutter project.
+A modern Flutter application to scan documents, extract text, manage PDFs, and generate AI-powered summaries — all from your device.
+
+## Features:-
+
+- *Document Scanning:** Auto-crop, perspective correction, and shadow removal.
+- **Text Extraction:** Extract text from scanned documents using OCR.
+- **PDF Management:** Create, view, edit, and organize multi-page PDFs.
+- **AI Summaries:** Summarize documents and ask questions using Gemini AI.
+- **Local Storage:** Store documents and summaries on your device.
+- **Material Design UI:** Clean, modern, and intuitive interface.
+
+## Tech Stack:-
+
+- **Framework:** Flutter
+- **Language:** Dart
+- **Scanning:** Google ML Kit Document Scanner
+- **OCR:** Google ML Kit Text Recognition
+- **PDF:** Syncfusion Flutter PDF Viewer
+- **State Management:** Riverpod
+- **Storage:** Hive / Isar
+- **AI:** Google Gemini API
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+- Flutter SDK
+- Dart SDK
+- Android Studio or VS Code
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+```bash
+git clone https://github.com/Heyy061/ai_doc_scanner.git
+cd ai_doc_scanner
+flutter pub get
+flutter run
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Configure your Gemini API key securely before using AI features.
+
